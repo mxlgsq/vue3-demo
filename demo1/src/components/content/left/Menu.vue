@@ -28,22 +28,42 @@
                 </li>
                 <li class="tui2-menu-item"></li>
             </ul>
-            <!-- <el-menu>
-                <el-menu-tiem>
-                    <span slot="title">主页</span>
-                </el-menu-tiem>
-                <el-menu-tiem>
-                    <span slot="title">发头条</span>
-                </el-menu-tiem>
-                <el-menu-tiem>
-                    <span slot="title">内容管理</span>
-                </el-menu-tiem>
-            </el-menu> -->
         </li>
-        <li class="tui2-menu-tab xigua_tab tui2-menu-sub-active">
-            
+        <li class="tui2-menu-sub xigua_tab tui2-menu-sub-active">
+            <div class="tui2-menu-sub-title tui2-menu-sub-title-active tui2-menu-sub-title-hide">
+                <span class="garr-sub-menu">
+                    <i class="tui-iconfont tui-menu-icon tui-iconfont-tab_video" prefix="tui-iconfont"></i>
+                    西瓜视频
+                </span>
+            </div>
+            <ul class="tui2-menu-sub-menu tui2-menu-sub-menu-show">
+                <li class="tui2-menu-item tui2-menu-item-active">
+                    <a class="active" aria-current="page" href="/xigua">视频主页</a>
+                </li>
+                <li class="tui2-menu-item">
+                    <a class="active" aria-current="page" href="/xigua/upload-video">发表视频</a>
+                </li>
+                <li class="tui2-menu-item">
+                    <a class="active" aria-current="page" href="/xigua/content-manage">内容管理</a>
+                </li>
+                <li class="tui2-menu-item">
+                    <a class="active" aria-current="page" href="/xigua/comment-manage">评论管理</a>
+                </li>
+                <li class="tui2-menu-item">
+                    <a class="active" aria-current="page" href="/xigua/comment-analysis">视频数据</a>
+                </li>
+                <li class="tui2-menu-item">
+                    <a class="active" aria-current="page" href="/xigua/income-analysis">收益分析</a>
+                </li>
+                <li class="tui2-menu-item">
+                    <a class="active" aria-current="page" href="/xigua/user-guide">西瓜权益</a>
+                </li>
+                <li class="tui2-menu-item">
+                    <a class="active" aria-current="page" href="https://live.ixigua.com/anchor-center/">我要开播</a>
+                </li>
+            </ul>
         </li>
-        <li class="tui2-menu-tab personal_tab tui2-menu-sub-active">
+        <li class="tui2-menu-sub personal_tab">
             
         </li>
     </ul>
@@ -87,6 +107,9 @@
     .tui2-menu-sub-active {
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
         margin-bottom: 10px;
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
     }
     .tui2-menu-sub {
         background: #ffffff;
